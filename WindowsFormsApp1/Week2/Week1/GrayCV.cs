@@ -16,7 +16,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
+        string Picture = "C:/Users/khamp/Documents/Image_processing/image_processing/WindowsFormsApp1/image/1099278.png";
         public Bitmap ConvertToGray(Bitmap source)
         {
 
@@ -37,7 +37,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pictureBox1.Image = ConvertToGray(new Bitmap("C:/Users/khamp/Documents/Image_processing/image_processing/WindowsFormsApp1/image/1099278.png"));
+            pictureBox1.Image = ConvertToGray(new Bitmap(Picture));
         }
     }
 }
