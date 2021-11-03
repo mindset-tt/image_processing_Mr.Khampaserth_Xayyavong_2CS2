@@ -17,10 +17,10 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new SetpixelForm());
-            //Application.Run(new GetPixel());
-            //Application.Run(new Get_Setpixel());
-            //Application.Run(new GrayCV());
+            Application.Run(new SetpixelForm());
+            Application.Run(new GetPixel());
+            Application.Run(new Get_Setpixel());
+            Application.Run(new GrayCV());
             Application.Run(new GrayScale_Black_and_White_and_Invert());
             Application.Run(new Emgu_Begining());
         }
