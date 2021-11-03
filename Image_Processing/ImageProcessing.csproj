@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Emgu.CV.Bitmap, Version=4.5.4.4788, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Emgu\emgucv-windesktop 4.5.4.4788\libs\Emgu.CV.Bitmap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -78,6 +82,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Week3\Emgu_Begining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Week3\Emgu_Begining.Designer.cs">
+      <DependentUpon>Emgu_Begining.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Week2\GrayScale_Black_and_White_and_Invert.resx">
       <DependentUpon>GrayScale_Black_and_White_and_Invert.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +113,12 @@
     <EmbeddedResource Include="Week1\SetpixelForm.resx">
       <DependentUpon>SetpixelForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Week3\Emgu_Begining.resx">
+      <DependentUpon>Emgu_Begining.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Library\cvextern.lib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -120,12 +136,48 @@
     <PackageReference Include="Emgu.CV.runtime.windows">
       <Version>4.5.4.4788</Version>
     </PackageReference>
+    <PackageReference Include="System.Drawing.Common">
+      <Version>5.0.2</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="image\1099278.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Library\concrt140.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\cvextern.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="image\118331381_324241168628900_3775018869720072343_n.png" />
+    <Content Include="Library\msvcp140.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\msvcp140_1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\msvcp140_2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\msvcp140_atomic_wait.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\msvcp140_codecvt_ids.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\opencv_videoio_ffmpeg454_64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\vcruntime140.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Library\vcruntime140_1.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\..\..\Emgu\emgucv-windesktop 4.5.4.4788\x64\vc16\bin\opencv_videoio_ffmpeg454_64.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

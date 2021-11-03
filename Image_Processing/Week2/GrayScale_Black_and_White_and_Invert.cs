@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Emgu.CV;
 
 namespace WindowsFormsApp1
 {
@@ -17,7 +18,8 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
         Bitmap pict_C;
-        Bitmap pict_O = (Bitmap)Image.FromFile("C:/Users/khamp/Documents/Image_processing/image_processing/WindowsFormsApp1/image/118331381_324241168628900_3775018869720072343_n.png");
+        //Bitmap pict_O = (Bitmap)Image.FromFile("C:/Users/khamp/Documents/Image_processing/image_processing/Image_Processing/image/118331381_324241168628900_3775018869720072343_n.png");
+        Bitmap pict_O;
 
         public Bitmap ConvertToGrayScale(Bitmap source)
         {
@@ -69,6 +71,45 @@ namespace WindowsFormsApp1
                 }
             }
             return bmp;
+        }
+
+        public Bitmap powerLaw1(Bitmap source, double R)
+        {
+            Bitmap bmp = new Bitmap(source.Width, source.Height);
+            int c = int.Parse(textBox2.Text.ToString().Trim());
+
+            for (int y = 0; y < source.Height; y++)
+            {
+                for (int x = 0; x < source.Width; x++)
+                {
+                    Color renk = source.GetPixel(x, y);
+                    double gd = ((double)R / 20);
+                    int sR = (int)(c * Math.Pow((renk.R / 255.0), gd));
+                    int sG = (int)(c * Math.Pow((renk.G / 255.0), gd));
+                    int sB = (int)(c * Math.Pow((renk.B / 255.0), gd));
+                    bmp.SetPixel(x, y, Color.FromArgb(renk.A, sR, sG, sB));
+                }
+            }
+            return bmp;
+        }
+
+        public Bitmap LogTransformation(Bitmap source)
+        {
+            Bitmap log = new Bitmap(source.Width, source.Height);
+            int C = int.Parse(textBox4.Text);
+
+            for (int y = 0; y < source.Height; y++)
+            {
+                for (int x = 0; x < source.Width; x++)
+                {
+                    Color renk = source.GetPixel(x, y);
+                    int sR = (int)(C * Math.Log10(1 + renk.R));
+                    int sG = (int)(C * Math.Log10(1 + renk.G));
+                    int sB = (int)(C * Math.Log10(1 + renk.B));
+                    log.SetPixel(x, y, Color.FromArgb(renk.A, sR, sG, sB));
+                }
+            }
+            return log;
         }
 
         public Bitmap Invert(Bitmap source)
@@ -153,6 +194,31 @@ namespace WindowsFormsApp1
         {
             pict_C = new Bitmap(pictureBox1.Image);
             pictureBox1.Image = ConvertToGrayScale2(pict_C);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Load Image From File";
+            ofd.Filter = "Jpeg Files (*.jpg)|*.jpg|PNG files(*.png)|*.png|BMP   files(*.bmp)|*.bmp|All files (*.*)|*.*";
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                pict_O = new Bitmap(ofd.FileName);
+                pictureBox1.Image = pict_O;
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            pict_C = new Bitmap(pictureBox1.Image);
+            textBox3.Text = (int.Parse(textBox3.Text.ToString()) / 20.0).ToString("F2");
+            pictureBox1.Image = powerLaw1(pict_C, double.Parse(textBox3.Text.ToString()));
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            pict_C = new Bitmap(pictureBox1.Image);
+            pictureBox1.Image = LogTransformation(pict_C);
         }
     }
 }
