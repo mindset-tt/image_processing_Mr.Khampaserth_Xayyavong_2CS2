@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
         Bitmap pict_C;
-        Bitmap pict_O = (Bitmap)Image.FromFile("C:/Users/khamp/Documents/Image_processing/image_processing/WindowsFormsApp1/image/118331381_324241168628900_3775018869720072343_n.png");
+        Bitmap pict_O = (Bitmap)Image.FromFile("C:/Users/khamp/Documents/Image_processing/image_processing/Image_Processing/image/118331381_324241168628900_3775018869720072343_n.png");
 
         public Bitmap ConvertToGrayScale(Bitmap source)
         {
