@@ -43,7 +43,7 @@ namespace WindowsFormsApp1.Week3
             SaveFileDialog saveImage = new SaveFileDialog();
             saveImage.Title = "Save Gray Image";
             saveImage.DefaultExt = "*.jpg";
-            saveImage.Filter = "Jpeg Files (*.jpg)|*.jpg|PNG files(*.png)|*.png|BMP   files(*.bmp)|*.bmp";
+            saveImage.Filter = "All files (*.*)|*.*|Jpeg Files (*.jpg)|*.jpg|PNG files(*.png)|*.png|Bitmap files(*.bmp)|*.bmp";
 
             if (saveImage.ShowDialog() == DialogResult.OK)
             {

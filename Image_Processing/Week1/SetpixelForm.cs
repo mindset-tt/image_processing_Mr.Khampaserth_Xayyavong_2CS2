@@ -20,9 +20,9 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             Bitmap srcBitmap = new Bitmap(pictureBox1.Image);
-            for (int x = 10; x < 120; x++)
+            for (int x = 10; x < 430; x++)
             {
-                srcBitmap.SetPixel(x, 10, Color.Red);
+                srcBitmap.SetPixel(x, 30, Color.Red);
             }
 
             pictureBox1.Image = srcBitmap;

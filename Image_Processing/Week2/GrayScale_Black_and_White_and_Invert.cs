@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
         Bitmap pict_C;
-        Bitmap pict_O = (Bitmap)Image.FromFile("C:/Users/khamp/Documents/Image_processing/image_processing/WindowsFormsApp1/image/118331381_324241168628900_3775018869720072343_n.png");
+        Bitmap pict_O;
 
         public Bitmap ConvertToGrayScale(Bitmap source)
         {
@@ -199,7 +199,7 @@ namespace WindowsFormsApp1
         {
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Load Image From File";
-            ofd.Filter = "Jpeg Files (*.jpg)|*.jpg|PNG files(*.png)|*.png|BMP   files(*.bmp)|*.bmp|All files (*.*)|*.*";
+            ofd.Filter = "All files (*.*)|*.*|Jpeg Files (*.jpg)|*.jpg|PNG files(*.png)|*.png|Bitmap files(*.bmp)|*.bmp";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 pict_O = new Bitmap(ofd.FileName);
