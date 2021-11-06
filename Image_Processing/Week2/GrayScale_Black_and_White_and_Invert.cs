@@ -210,7 +210,6 @@ namespace WindowsFormsApp1
         private void button8_Click(object sender, EventArgs e)
         {
             pict_C = new Bitmap(pictureBox1.Image);
-            textBox3.Text = (int.Parse(textBox3.Text.ToString()) / 20.0).ToString("F2");
             pictureBox1.Image = powerLaw1(pict_C, double.Parse(textBox3.Text.ToString()));
         }
 
