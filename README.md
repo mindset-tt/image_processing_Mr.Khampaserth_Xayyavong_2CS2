@@ -5,9 +5,11 @@ Lab class Every Wed
 # !!!Before Copy to coding!!!
 
 
-install necessary packages before running by click Tool on the Menu Bar then Click on nuget package manager and click on Package Manager Settings
+Install necessary packages before running by click Tool on the Menu Bar then Click on nuget package manager and click on Package Manager Settings
+
 In that you will see Combo Box. you will See Package.config and Change it to PackageReferrence 
-then click Tool on the Menu Bar Again then Click on nuget package manager Again and click on Package Manager Console and type command:
+
+Then click Tool on the Menu Bar Again then Click on nuget package manager Again and click on Package Manager Console and type command:
 
 Install-Package Emgu.CV -Version 4.5.4.4788
 
