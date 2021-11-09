@@ -1,4 +1,5 @@
 # image_processing_Mr.Khampaserth_Xayyavong_2CS2
+# Please READ THE WARNNING
 Lab class Every Wed
 
 !!!Before Copy to coding!!!
