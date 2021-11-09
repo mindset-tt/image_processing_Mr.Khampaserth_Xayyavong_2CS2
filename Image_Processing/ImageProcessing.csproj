@@ -104,6 +104,18 @@
     <Compile Include="Week3\Emgu_Begining.Designer.cs">
       <DependentUpon>Emgu_Begining.cs</DependentUpon>
     </Compile>
+    <Compile Include="Week4\Image_HistogramBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Week4\Image_HistogramBox.Designer.cs">
+      <DependentUpon>Image_HistogramBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Image_Processing_to_Black_and_White.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Week5\Image_Processing_to_Black_and_White.Designer.cs">
+      <DependentUpon>Image_Processing_to_Black_and_White.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Week2\GrayScale_Black_and_White_and_Invert.resx">
       <DependentUpon>GrayScale_Black_and_White_and_Invert.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +143,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Week3\Emgu_Begining.resx">
       <DependentUpon>Emgu_Begining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Week4\Image_HistogramBox.resx">
+      <DependentUpon>Image_HistogramBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Week5\Image_Processing_to_Black_and_White.resx">
+      <DependentUpon>Image_Processing_to_Black_and_White.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -162,7 +180,7 @@
       <Version>4.5.4.4788</Version>
     </PackageReference>
     <PackageReference Include="System.Drawing.Common">
-      <Version>5.0.2</Version>
+      <Version>6.0.0</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +191,9 @@
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\..\..\..\..\..\Emgu\emgucv-windesktop 4.5.4.4788\x64\vc16\bin\opencv_videoio_ffmpeg454_64.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
