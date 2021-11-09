@@ -2,7 +2,7 @@
 # Please READ THE WARNNING
 Lab class Every Wed
 
-!!!Before Copy to coding!!!
+# !!!Before Copy to coding!!!
 
 
 install necessary packages before running by click Tool on the Menu Bar then Click on nuget package manager and click on Package Manager Settings
@@ -24,5 +24,5 @@ and must change path in GrayCV.cs to your path like C:/... or D:/
 
 
 
-!!!Before Copy to coding!!!
+# !!!Before Copy to coding!!!
 
