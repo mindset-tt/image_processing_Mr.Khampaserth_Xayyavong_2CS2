@@ -52,6 +52,13 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debugging|AnyCPU'">
+    <OutputPath>bin\Debugging\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debugging|x64'">
+    <OutputPath>bin\x64\Debugging\</OutputPath>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -188,9 +195,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="image\118331381_324241168628900_3775018869720072343_n.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\..\..\..\..\..\Emgu\emgucv-windesktop 4.5.4.4788\x64\vc16\bin\opencv_videoio_ffmpeg454_64.dll" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
