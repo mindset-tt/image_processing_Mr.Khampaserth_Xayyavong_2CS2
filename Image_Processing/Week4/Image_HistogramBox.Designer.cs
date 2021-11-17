@@ -51,6 +51,7 @@ namespace WindowsFormsApp1.Week4
             this.imageBox1.Location = new System.Drawing.Point(12, 63);
             this.imageBox1.Name = "imageBox1";
             this.imageBox1.Size = new System.Drawing.Size(400, 293);
+            this.imageBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageBox1.TabIndex = 2;
             this.imageBox1.TabStop = false;
             // 
@@ -59,6 +60,7 @@ namespace WindowsFormsApp1.Week4
             this.imageBox2.Location = new System.Drawing.Point(433, 63);
             this.imageBox2.Name = "imageBox2";
             this.imageBox2.Size = new System.Drawing.Size(400, 293);
+            this.imageBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageBox2.TabIndex = 2;
             this.imageBox2.TabStop = false;
             // 
@@ -67,6 +69,7 @@ namespace WindowsFormsApp1.Week4
             this.imageBox3.Location = new System.Drawing.Point(852, 63);
             this.imageBox3.Name = "imageBox3";
             this.imageBox3.Size = new System.Drawing.Size(400, 293);
+            this.imageBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageBox3.TabIndex = 2;
             this.imageBox3.TabStop = false;
             // 
@@ -75,6 +78,7 @@ namespace WindowsFormsApp1.Week4
             this.histogramBox1.Location = new System.Drawing.Point(12, 377);
             this.histogramBox1.Name = "histogramBox1";
             this.histogramBox1.Size = new System.Drawing.Size(400, 292);
+            this.histogramBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.histogramBox1.TabIndex = 2;
             this.histogramBox1.TabStop = false;
             // 
@@ -83,6 +87,7 @@ namespace WindowsFormsApp1.Week4
             this.histogramBox2.Location = new System.Drawing.Point(433, 377);
             this.histogramBox2.Name = "histogramBox2";
             this.histogramBox2.Size = new System.Drawing.Size(400, 292);
+            this.histogramBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.histogramBox2.TabIndex = 2;
             this.histogramBox2.TabStop = false;
             // 
@@ -91,6 +96,7 @@ namespace WindowsFormsApp1.Week4
             this.histogramBox3.Location = new System.Drawing.Point(852, 377);
             this.histogramBox3.Name = "histogramBox3";
             this.histogramBox3.Size = new System.Drawing.Size(400, 292);
+            this.histogramBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.histogramBox3.TabIndex = 2;
             this.histogramBox3.TabStop = false;
             // 

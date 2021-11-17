@@ -71,7 +71,7 @@ namespace WindowsFormsApp1.Week5
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -82,7 +82,7 @@ namespace WindowsFormsApp1.Week5
             this.binaryInvertToolStripMenuItem,
             this.oTSuToolStripMenuItem});
             this.simpleThresoldToolStripMenuItem.Name = "simpleThresoldToolStripMenuItem";
-            this.simpleThresoldToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.simpleThresoldToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.simpleThresoldToolStripMenuItem.Text = "Simple Thresold";
             // 
             // binaryToolStripMenuItem
@@ -112,7 +112,7 @@ namespace WindowsFormsApp1.Week5
             this.guassianToolStripMenuItem,
             this.meanToolStripMenuItem});
             this.adaptivrThresoldToolStripMenuItem.Name = "adaptivrThresoldToolStripMenuItem";
-            this.adaptivrThresoldToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adaptivrThresoldToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.adaptivrThresoldToolStripMenuItem.Text = "Adaptive Thresold";
             // 
             // guassianToolStripMenuItem
@@ -132,7 +132,7 @@ namespace WindowsFormsApp1.Week5
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -141,6 +141,7 @@ namespace WindowsFormsApp1.Week5
             this.pictureBox1.Location = new System.Drawing.Point(12, 56);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(480, 325);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -149,6 +150,7 @@ namespace WindowsFormsApp1.Week5
             this.pictureBox2.Location = new System.Drawing.Point(567, 56);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(480, 325);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
