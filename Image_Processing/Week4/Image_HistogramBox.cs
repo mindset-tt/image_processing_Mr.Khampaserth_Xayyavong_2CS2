@@ -36,9 +36,9 @@ namespace WindowsFormsApp1.Week4
             if (OpenFile.ShowDialog() == DialogResult.OK)
             {
                 oriImage = new Image<Bgr, byte>(OpenFile.FileName);
-                R = oriImage[0];
+                R = oriImage[2];
                 G = oriImage[1];
-                B = oriImage[2];
+                B = oriImage[0];
                 imageBox1.Image = R;
                 imageBox2.Image = G;
                 imageBox3.Image = B;
