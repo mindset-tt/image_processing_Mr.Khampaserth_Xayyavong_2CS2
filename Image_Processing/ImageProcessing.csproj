@@ -62,6 +62,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -117,6 +118,12 @@
     <Compile Include="Week4\Image_HistogramBox.Designer.cs">
       <DependentUpon>Image_HistogramBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Week4\Image_Histogram_select.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Week4\Image_Histogram_select.Designer.cs">
+      <DependentUpon>Image_Histogram_select.cs</DependentUpon>
+    </Compile>
     <Compile Include="Week5\Image_Processing_to_Black_and_White.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Week4\Image_HistogramBox.resx">
       <DependentUpon>Image_HistogramBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Week4\Image_Histogram_select.resx">
+      <DependentUpon>Image_Histogram_select.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Week5\Image_Processing_to_Black_and_White.resx">
       <DependentUpon>Image_Processing_to_Black_and_White.cs</DependentUpon>

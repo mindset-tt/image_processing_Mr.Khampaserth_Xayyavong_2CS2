@@ -24,8 +24,9 @@ namespace WindowsFormsApp1
             //Application.Run(new Get_Setpixel());
             //Application.Run(new GrayCV());
             //Application.Run(new GrayScale_Black_and_White_and_Invert());
-            Application.Run(new Emgu_Begining());
+            //Application.Run(new Emgu_Begining());
             //Application.Run(new Image_HistogramBox());
+            Application.Run(new Image_Histogram_select());
             //Application.Run(new Image_Processing_to_Black_and_White());
         }
     }
