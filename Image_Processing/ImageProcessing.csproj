@@ -130,6 +130,12 @@
     <Compile Include="Week5\Image_Processing_to_Black_and_White.Designer.cs">
       <DependentUpon>Image_Processing_to_Black_and_White.cs</DependentUpon>
     </Compile>
+    <Compile Include="Week5\Image_Processing_to_Black_And_White_ComboBOX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Week5\Image_Processing_to_Black_And_White_ComboBOX.Designer.cs">
+      <DependentUpon>Image_Processing_to_Black_And_White_ComboBOX.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Week2\GrayScale_Black_and_White_and_Invert.resx">
       <DependentUpon>GrayScale_Black_and_White_and_Invert.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Week5\Image_Processing_to_Black_and_White.resx">
       <DependentUpon>Image_Processing_to_Black_and_White.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Week5\Image_Processing_to_Black_And_White_ComboBOX.resx">
+      <DependentUpon>Image_Processing_to_Black_And_White_ComboBOX.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
