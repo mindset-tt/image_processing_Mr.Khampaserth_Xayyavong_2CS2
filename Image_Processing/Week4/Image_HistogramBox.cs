@@ -43,6 +43,12 @@ namespace WindowsFormsApp1.Week4
                 imageBox2.Image = G;
                 imageBox3.Image = B;
             }
+            histogramBox1.ClearHistogram();
+            histogramBox2.ClearHistogram();
+            histogramBox3.ClearHistogram();
+            histogramBox1.Refresh();
+            histogramBox2.Refresh();
+            histogramBox3.Refresh();
         }
 
         private void button2_Click(object sender, EventArgs e)
